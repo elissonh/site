@@ -1,0 +1,75 @@
+:root {
+  --bg-primary: #07111F;
+  --bg-secondary: #0B1726;
+
+  --card: #0D1B2A;
+  --card-hover: #112337;
+
+  --border: #1E344A;
+  --border-hover: #2B7A78;
+
+  --primary: #4DE1C1;
+  --primary-hover: #36C9AA;
+  --primary-soft: #4DE1C115;
+
+  --text-primary: #F1F5F9;
+  --text-secondary: #B6C2CF;
+  --text-muted: #718096;
+
+  --success: #4ADE80;
+  --warning: #FBBF24;
+  --danger: #F87171;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #07111F;
+}
+
+.link-color > li > a {
+    color: var(--text-secondary) !important;
+}
+
+.link-color > li > a:hover {
+    color: var(--primary) !important;
+}
+
+.icon-color {
+    color: var(--text-primary) !important;
+}
+
+.icon-color:hover {
+    color: var(--primary) !important;
+}
+
+.border-color {
+    border-color: var(--border) !important;
+}
+
+.text-secondary-color {
+    color: var(--text-secondary) !important;
+}
+
+.button-color {
+    color: var(--text-primary) !important;
+}
+
+.button-color:hover {
+    color: var(--primary) !important;
+}
+
+.bg-secondary {
+    background-color: var(--bg-secondary) !important;
+}
+
+.danger-button-color {
+    color: var(--text-primary);
+}
+
+.danger-button-color:hover {
+    color: var(--danger);
+}
