@@ -1,14 +1,18 @@
-import { DiCode } from "react-icons/di";
-import { HiOutlineSquare3Stack3D } from "react-icons/hi2";
+import AboutSection from "./section/About";
+import StackSection from "./section/Stack";
+import GithubSection from "./section/Github";
+import ProjectsSection from "./section/Projects";
 
-export default function Hero(){
+export default function Hero() {
     return (
-        <main>
-            <section id="sobre">SOBRE</section>
-            <section id="tecnologias">TECNOGIAS</section>
-            <section id="github">GITHUB</section>
-            <section id="projetos">PROJETOS</section>
-            <section id="contato">CONTATO</section>
+        <main className="p-5">
+            <AboutSection />
+            <hr className="my-5 border-color" />
+            <StackSection />
+            <hr className="my-5 border-color" />
+            <GithubSection />
+            <hr className="my-5 border-color" />
+            <ProjectsSection />
         </main>
     );
 }

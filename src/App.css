@@ -30,6 +30,10 @@ body {
     background-color: #07111F;
 }
 
+.primary-text-color {
+    color: var(--primary) !important;
+}
+
 .link-color > li > a {
     color: var(--text-secondary) !important;
 }
@@ -65,6 +69,27 @@ body {
 .bg-secondary {
     background-color: var(--bg-secondary) !important;
 }
+.bg-card {
+    background-color: var(--card);
+}
+
+.primary-button-color {
+    background-color: var(--primary);
+    color: black;
+}
+.primary-button-color:hover {
+    background-color: var(--primary-hover);
+    color: black;
+}
+.primary-button-bordered {
+    border: 1px solid var(--primary);
+    color: var(--text-primary);
+}
+.primary-button-bordered:hover {
+    border: 1px solid none;
+    color: black;
+    background-color: var(--primary-hover);
+}
 
 .danger-button-color {
     color: var(--text-primary);
@@ -72,4 +97,9 @@ body {
 
 .danger-button-color:hover {
     color: var(--danger);
+}
+
+.icon-size {
+    width: 40px;
+    height: 40px;
 }

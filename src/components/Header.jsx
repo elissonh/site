@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import CustomNav from "./CustomNav";
-import VerticalNavBar from "./VerticalNavBar";
+import VerticalNavBar from "./common/VerticalNavBar";
 import SocialMedias from "./common/SocialMedias";
 import Modal from "./common/Modal";
 import logo from '../assets/logo.svg';

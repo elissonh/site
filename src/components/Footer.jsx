@@ -6,19 +6,15 @@ export default function Footer() {
   return (
     <>
       <hr className="m-0 border border-light border-1 border-color" />
-      <footer className="d-flex justify-content-between align-items-center gap-3 p-3 text-light">
-        <div className="d-flex align-items-center gap-3">
-          <img src={logo} alt="Logo" />
-          <div className="d-flex gap-3 text-secondary-color">
+      <footer className="p-3 text-light small">
+        <div className="d-flex justify-content-between justify-content-md-center text-secondary-color align-items-center gap-4">
+          <div className="d-flex gap-2 align-items-center">
+            <img src={logo} alt="Logo" />
             <span className="text-light">Elisson Rocha</span>
             <div className="vr"></div>
             <span className="">Desenvolvedor Full Stack</span>
           </div>
-        </div>
-        <div className="d-flex align-items-center gap-5">
-          <CustomNav></CustomNav>
           <SocialMedias id="social-media-footer"></SocialMedias>
-          <span className="text-secondary-color">© 2026 Elisson Rocha</span>
         </div>
       </footer>
     </>
