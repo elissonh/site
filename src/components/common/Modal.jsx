@@ -15,10 +15,6 @@ export default function Modal({ id, onClose, children, ...props }) {
   return (
     <>
       <div id={id} {...props}>
-        <div
-          className="position-fixed top-0 start-0 w-100 h-100 bg-dark bg-opacity-50 z-1"
-          onClick={onClose}
-        />
         {children}
       </div>
     </>
