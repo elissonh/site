@@ -10,8 +10,7 @@ function App() {
   return (
     <div className='container'>
       <Header></Header>
-      {/* <Hero></Hero> */}
-      <div id='main'></div>
+      <Hero></Hero>
       <Footer></Footer>
     </div>
   )

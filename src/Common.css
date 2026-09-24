@@ -27,6 +27,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 button {
@@ -93,14 +94,27 @@ ul {
     display: flex;
     flex-direction: column;
 }
+.d-block {
+    display: block;
+}
 
 /* Text/Font */
 .text-small {
     font-size: small;
 }
+.text-md {
+    font-size: .7;
+}
 
 .text-primary {
     color: var(--text-primary);
+}
+.text-secondary {
+    color: var(--text-secondary);
+}
+
+.text-center {
+    text-align: center;
 }
 
 .fw-semibold {
@@ -114,4 +128,9 @@ ul {
 .link:hover {
     color: var(--primary);
     text-decoration: underline;
+}
+
+/* Spacing */
+.m-auto {
+    margin: auto;
 }

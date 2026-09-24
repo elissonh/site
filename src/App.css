@@ -37,7 +37,7 @@
 /* Layout */
 .container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     grid-template-rows: 80px 1fr auto;
     min-height: 100vh;
 }
@@ -65,6 +65,7 @@
 #footer {
     grid-row: -1;
     grid-column: 1;
+    padding: var(--app-padding);
 }
 
 /* Others */
@@ -88,6 +89,26 @@ header .logo {
 header img {
     margin-right: 1.5em;
 }
+
+
+/* Footer */
+#footer-description {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: var(--app-padding);
+}
+#footer-title {
+    display: inline-flex;
+    flex-direction: column;
+}
+#footer-social-medias {
+    margin-top: calc(var(--app-padding) / 2);
+}
+#footer-social-medias a:not(:last-child) {
+    margin-right: calc(var(--app-padding) / 2);
+}
+
 
 /* Modal Sidebar */
 .modal-back-layer {
@@ -134,9 +155,8 @@ header img {
 .icon-color {
     color: var(--text-primary);
 }
-
 .icon-color:hover {
-    color: var(--primary);
+    color: grey;
 }
 
 .border-color {
