@@ -1,8 +1,8 @@
 import { DiCode, DiGithubBadge } from "react-icons/di";
 import { FiExternalLink } from "react-icons/fi";
 
-import DefaultProjectImage from '../../assets/project-default.jpg';
-
+import DefaultProjectImage from '../../../../assets/project-default.jpg';
+import HeroSection from "../HeroSection/HeroSection";
 
 function ProjectCard({ pathToImage, title, desc, tags = [], sourceLink, demoLink }) {
   return (
@@ -30,7 +30,7 @@ function ProjectCard({ pathToImage, title, desc, tags = [], sourceLink, demoLink
   );
 }
 
-export default function ProjectsSection() {
+export default function ProjectsSection({ ...props }) {
   const projects = [
     {
       pathToImage: DefaultProjectImage,
@@ -47,14 +47,8 @@ export default function ProjectsSection() {
   ]
 
   return (
-    <section >
-      <div>
-        <h3 className="h5 text-white d-flex align-items-center gap-3">
-          <DiCode size={32} />
-          Projetos
-        </h3>
-      </div>
-      <div className="d-flex gap-4">
+    <HeroSection title="Projetos" TitleIcon={DiCode} { ...props }>
+      {/* <div className="d-flex gap-4">
         {projects.map((project) => (
           <ProjectCard
             pathToImage={project.pathToImage}
@@ -63,7 +57,7 @@ export default function ProjectsSection() {
             tags={project.tags}
           />
         ))}
-      </div>
-    </section>
+      </div> */}
+    </HeroSection>
   );
 }

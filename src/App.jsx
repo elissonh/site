@@ -1,19 +1,10 @@
+import './styles/base.css'
+import './styles/tokens.css'
 
-import './App.css'
-import './Common.css'
-
-import Header from './components/Header'
-import Hero from './components/Hero'
-import Footer from './components/Footer'
+import Home from './pages/Home/Home'
 
 function App() {
-  return (
-    <div className='container'>
-      <Header></Header>
-      <Hero></Hero>
-      <Footer></Footer>
-    </div>
-  )
+  return <Home></Home>
 }
 
 export default App

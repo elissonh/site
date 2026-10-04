@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+  --bg-primary: #07111F;
+  --bg-secondary: #0B1726;
+
+  --card: #0D1B2A;
+  --card-hover: #112337;
+
+  --border: #1E344A;
+  --border-secondary: #1e344a85;;
+  --border-hover: #2B7A78;
+
+  --primary: #4DE1C1;
+  --primary-hover: #36C9AA;
+  --primary-soft: #4DE1C115;
+
+  --text-primary: #F1F5F9;
+  --text-secondary: #B6C2CF;
+  --text-muted: #718096;
+
+  --success: #4ADE80;
+  --warning: #FBBF24;
+  --danger: #F87171;
+
+  --app-padding: 16px;
+  --inner-spacing: 8px;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 24px;
+
+  /* Typography */
+  --font-body: "Open Sans", sans-serif;
+  --text-sm: 0.875rem;
+  --text-xs: 0.75rem;
+  --text-base: 1rem;
+
+  --transition: 150ms ease;
+}

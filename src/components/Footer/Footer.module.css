@@ -1,0 +1,25 @@
+.footer {
+    padding: var(--space-4);
+    background-color: var(--bg-secondary);
+    grid-row: -1;
+    grid-column: 1;
+}
+.footerDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--space-3);
+}
+.footerTitle {
+    display: inline-flex;
+    flex-direction: column;
+}
+.socialMedia {
+    margin-top: var(--space-2);
+}
+.socialMediaLink:not(:last-child) {
+    margin-right: var(--space-2);
+}
+.nav {
+    font-size: var(--text-sm);
+}

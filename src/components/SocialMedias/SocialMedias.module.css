@@ -1,0 +1,14 @@
+.socialMediaLink {
+    color: white;
+    border: 1px var(--border) solid;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--radius-md);
+    padding: var(--space-2);
+    margin-right: var(--space-2);
+}
+.socialMediaLink:hover {
+    border-color: var(--primary-hover);
+    color: var(--primary-hover);
+}

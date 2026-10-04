@@ -1,0 +1,10 @@
+.presentation {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.socialMedia {
+    display: flex;
+    gap: var(--space-2);
+}

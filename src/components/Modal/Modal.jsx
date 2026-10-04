@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 
+import styles from './Modal.module.css';
+
 export default function Modal({ id, onClose, children, ...props }) {
   useEffect(() => {
     function handleEscKeyDown(event) {
@@ -14,7 +16,11 @@ export default function Modal({ id, onClose, children, ...props }) {
 
   return (
     <>
-      <div id={id} {...props}>
+      <div
+        className={styles.backLayer}
+        onClick={onClose}
+      />
+      <div className={styles.modal} {...props}>
         {children}
       </div>
     </>

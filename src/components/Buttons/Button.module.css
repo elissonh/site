@@ -1,0 +1,46 @@
+.button {
+    border: none;
+    border-radius: var(--radius-sm);
+    padding: var(--space-2) var(--space-3);
+    cursor: pointer;
+    transition: background-color var(--transition), color var(--transition);
+    /* height: fit-content; */
+    /* For when exiting icon */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-2);
+}
+.button:active {
+    border: 1px solid var(--primary-hover);
+}
+.equalPadding {
+    padding: var(--space-2);
+}
+
+.solid {
+    color: black;
+    background-color: var(--primary);
+}
+.solid:hover {
+    background-color: var(--primary-hover);
+}
+
+.outline {
+    background-color: transparent;
+    color: var(--text-primary);
+    border: 1px solid var(--primary);
+}
+.outline:hover {
+    background-color: var(--primary-hover);
+    color: black;
+}
+
+.transparent {
+    background-color: transparent;
+    color: var(--text-primary);
+}
+.transparent:hover {
+    background-color: transparent;
+    color: var(--primary);
+}

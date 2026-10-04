@@ -1,0 +1,63 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg-primary);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Typography */
+.text-primary {
+    color: var(--text-primary);
+}
+.text-secondary {
+    color: var(--text-secondary);
+}
+.text-main {
+    color: var(--primary);
+}
+.text-white {
+    color: white;
+}
+.text-center {
+    text-align: center;
+}
+.text-semibold {
+    font-weight: 600;
+}
+.fs-sm {
+    font-size: var(--text-sm);
+}
+.fs-xs {
+    font-size: var(--text-xs);
+}
+
+/* Spacing */
+.m-auto {
+    margin: auto;
+}
+
+/* Background */
+.bg-secondary {
+    background-color: var(--bg-secondary);
+}
+.bg-card {
+    background-color: var(--card);
+}
+
+/* Border */
+.border-color {
+    border-color: var(--border-secondary);
+}
