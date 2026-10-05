@@ -9,7 +9,7 @@ export default function VerticalNavBar({ items = [], direction = "column", ulPro
         <ul className={ulClass}>
           {
             items.map((item) => (
-              <li>
+              <li key={item.name}>
                 <a className={styles.link} href={item.href}>{item.name}</a>
               </li>
             ))

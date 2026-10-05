@@ -11,5 +11,8 @@
     gap: var(--space-2);
     margin-bottom: var(--space-4);
 }
-
+.heroSectionTitle svg {
+    height: 1.75rem;
+    width: 1.75rem;
+}
 
