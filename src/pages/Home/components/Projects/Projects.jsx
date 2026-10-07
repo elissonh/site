@@ -4,26 +4,27 @@ import { FiExternalLink } from "react-icons/fi";
 import DefaultProjectImage from '../../../../assets/project-default.jpg';
 import HeroSection from "../HeroSection/HeroSection";
 
-function ProjectCard({ pathToImage, title, desc, tags = [], sourceLink, demoLink }) {
+import styles from './Projects.module.css'
+
+function ProjectCard({ pathToImage, title, desc, tags = [], sourceLink, demoLink, ...props }) {
   return (
-    <div className="d-flex flex-column border rounded border-color overflow-hidden p-3 gap-2" style={{ width: "400px" }}>
+    <div className={styles.card} {...props}>
       <img src={pathToImage} alt="Preview do projeto" className="project-imagem-size" />
-      <span className="text-white fw-semibold">{title}</span>
-      <p className="text-secondary m-0">{desc}</p>
-      <div className="d-flex gap-2">
-        {tags.map((tag) => (
-          <span className="badge rounded-pill bg-card text-secondary p-2">{tag}</span>
-        ))}
-      </div>
-      <div className="d-flex gap-3">
-        <div>
-          <DiGithubBadge size={24} className="me-2 text-white" />
-          <a className="small align-middle link-opacity-50-hover link-offset-2 link-underline link-underline-opacity-0" href="#">Ver no GitHub</a>
+      <div className={styles.cardContent}>
+        <span className={styles.title}>{title}</span>
+        <p>{desc}</p>
+        <div className={styles.badges}>
+          {tags.map((tag) => (
+            <span key={tag}>{tag}</span>
+          ))}
         </div>
-        <div className="vr border-color"></div>
-        <div>
-          <FiExternalLink size={18} className="me-2 text-white" />
-          <a className="small align-middle link-opacity-50-hover link-offset-2 link-underline link-underline-opacity-0" href="#">Ver demo</a>
+        <div className={styles.links}>
+          <a href="#">
+            <DiGithubBadge />
+            Ver no GitHub</a>
+
+          <a href="#">
+            <FiExternalLink />Ver demo</a>
         </div>
       </div>
     </div>
@@ -42,22 +43,23 @@ export default function ProjectsSection({ ...props }) {
       pathToImage: DefaultProjectImage,
       title: "Teste",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque commodi consequuntur minus ea recusandae, dolor, facilis maiores harum doloribus reprehenderit suscipit similique tempora, dicta mollitia veniam odio consectetur repellat unde.",
-      tags: ["React", "JavaScript", "BootStrap"]
+      tags: ["React", "JavaScript", "XYZ"]
     }
   ]
 
   return (
-    <HeroSection title="Projetos" TitleIcon={DiCode} { ...props }>
-      {/* <div className="d-flex gap-4">
-        {projects.map((project) => (
+    <HeroSection title="Projetos" TitleIcon={DiCode} {...props}>
+      <div className={styles.projectContainer}>
+        {projects.map((project, index) => (
           <ProjectCard
+            key={index}
             pathToImage={project.pathToImage}
             title={project.title}
             desc={project.desc}
             tags={project.tags}
           />
         ))}
-      </div> */}
+      </div>
     </HeroSection>
   );
 }

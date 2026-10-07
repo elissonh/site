@@ -1,0 +1,60 @@
+.projectContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    gap: var(--space-4);
+}
+.projectContainer img {
+    width: 100%;
+    object-fit: fill;
+    aspect-ratio: 16 / 9;
+}
+.card {
+    background-color: var(--bg-secondary);
+    width: 100%;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+}
+.cardContent {
+    padding: var(--space-3);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+.title {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+.cardContent p {
+    color: var(--text-secondary);
+    font-size: var(--text-sm);
+}
+.badges {
+    color: var(--text-secondary);
+    display: flex;
+    gap: var(--space-2);
+    font-size: var(--text-xs);
+}
+.badges span {
+    background-color: var(--bg-primary);
+    padding: var(--space-1) var(--space-3);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+}
+.links {
+    display: flex;
+    gap: var(--space-4);
+}
+.links a {
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+    font-size: var(--text-sm);
+    color: var(--text-primary);
+}
+.links a > svg {
+    height: 16px;
+    width: 16px;
+}
+.links a:hover {
+    color: var(--primary);
+}
