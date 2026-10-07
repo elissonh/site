@@ -1,0 +1,52 @@
+.activity {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: auto auto;
+    margin: 0px auto var(--space-4) auto;
+    justify-items: center;
+    gap: var(--space-4);
+    width: fit-content;
+}
+.infoCard {
+    width: 100%;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: var(--space-4);
+    font-size: var(--text-sm);
+    display: flex;
+    gap: var(--space-4);
+}
+.infoCardIcon {
+    color: var(--primary);
+    width: 28px;
+    height: 28px;
+    align-self: center;
+    flex-shrink: 0;
+}
+.infoCardContent {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    justify-content: space-between;
+    line-height: 1;
+    flex: 1;
+    min-width: 0;
+}
+.infoCardValue {
+    color: var(--text-primary);
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.infoCardLabel {
+    color: var(--text-secondary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.graph {
+    color: var(--text-secondary);
+    margin: auto;
+}
