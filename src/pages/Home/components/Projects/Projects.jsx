@@ -36,19 +36,19 @@ export default function ProjectsSection({ ...props }) {
     {
       pathToImage: DefaultProjectImage,
       title: "Teste",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque commodi consequuntur minus ea recusandae, dolor, facilis maiores harum doloribus reprehenderit suscipit similique tempora, dicta mollitia veniam odio consectetur repellat unde.",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque commodi consequuntur minus ea recusandae, dolor, facilis maiores harum doloribus reprehenderit suscipit similique tempora, dicta mollitia veniam odio consectetur repellat unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque commodi consequuntur minus ea recusandae, dolor, facilis maiores harum doloribus reprehenderit suscipit similique tempora, dicta mollitia veniam odio consectetur repellat unde.",
       tags: ["React", "JavaScript", "BootStrap"]
     },
     {
       pathToImage: DefaultProjectImage,
-      title: "Teste",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque commodi consequuntur minus ea recusandae, dolor, facilis maiores harum doloribus reprehenderit suscipit similique tempora, dicta mollitia veniam odio consectetur repellat unde.",
+      title: "Projeto em Desenvolvimento",
+      desc: "Em breve...",
       tags: ["React", "JavaScript", "XYZ"]
     }
   ]
 
   return (
-    <HeroSection title="Projetos" TitleIcon={DiCode} {...props}>
+    <HeroSection title="Projetos" TitleIcon={DiCode} cssClass={styles.gridElementAllColumn} {...props}>
       <div className={styles.projectContainer}>
         {projects.map((project, index) => (
           <ProjectCard

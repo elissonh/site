@@ -3,13 +3,15 @@
     border: 1px solid var(--border);
     border-radius: var(--radius-sm);
     background-color: var(--bg-secondary);
+    width: 100%;
+    min-width: 0;
 }
 .heroSectionTitle {
     color: var(--primary);
+    margin-bottom: var(--space-4);
     display: flex;
     align-items: center;
     gap: var(--space-2);
-    margin-bottom: var(--space-4);
 }
 .heroSectionTitle svg {
     height: 1.75rem;

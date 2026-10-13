@@ -30,16 +30,17 @@ export default function GithubSection({ ...props }) {
         <InfoCard label="Repositórios" value={99} Icon={FaLaptopCode} />
         <InfoCard label="Commits" value={99} Icon={FaCodeBranch} />
         <InfoCard label="Projetos públicos" value={999} Icon={RiGitRepositoryCommitsLine} />
-
       </div>
-      <GitHubCalendar
-        username="elissonh"
-        blockSize={10}
-        blockMargin={4}
-        fontSize={12}
-        colorScheme="dark" // or "dark"
-        className={styles.graph}
-      />
+      <div className={styles.githubCalendar}>
+        <GitHubCalendar
+          username="elissonh"
+          blockSize={10}
+          blockMargin={4}
+          fontSize={12}
+          colorScheme="dark" // or "dark"
+          className={styles.graph}
+        />
+      </div >
     </HeroSection>
   );
 }

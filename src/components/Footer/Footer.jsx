@@ -13,8 +13,8 @@ export default function Footer() {
 
   return (
     <>
-      <hr className="border-color" />
       <div className={styles.footer}>
+        <hr className="border-color" />
         <footer>
           <div className={styles.footerDescription}>
             <div className={styles.footerTitle}>

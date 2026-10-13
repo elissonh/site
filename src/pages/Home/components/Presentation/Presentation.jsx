@@ -5,10 +5,10 @@ import Button from "../../../../components/Buttons/Button";
 
 import styles from './Presentation.module.css';
 
-export default function PresentationSection() {
+export default function PresentationSection({ className = "", ...props }) {
   return (
     <>
-      <section className={styles.presentation}>
+      <section className={`${className} ${styles.presentation}`} {...props}>
         <div>
           <h1 className="text-white">Elisson Rocha</h1>
           <h2 className="text-main">Desenvolvedor Front-End</h2>

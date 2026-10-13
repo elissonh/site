@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(2, 200px);
     grid-template-rows: auto auto;
-    margin: 0px auto var(--space-4) auto;
+    margin: 0px auto var(--space-5) auto;
     justify-items: center;
     gap: var(--space-4);
     width: fit-content;
@@ -45,7 +45,11 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
+.githubCalendar {
+    min-width: 0;
+    max-width: 100%;
+    overflow-x: auto;
+}
 .graph {
     color: var(--text-secondary);
     margin: auto;
