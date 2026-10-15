@@ -22,8 +22,7 @@ export default function Footer() {
               <span className="text-secondary fs-xs">Desenvolvedor Front-End</span>
             </div>
             <SocialMedias className={styles.socialMedia} />
-            <Nav items={navItems} direction="row" className={styles.nav} ></Nav>
-            <hr className="border-color" />
+            <Nav items={navItems} className={styles.nav} ulProps={styles.horizontalNav}></Nav>
             <span className="text-secondary fs-xs">© 2026 - Todos os direitos reservados. </span>
           </div>
         </footer>

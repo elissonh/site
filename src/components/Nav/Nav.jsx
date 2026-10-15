@@ -1,12 +1,10 @@
 import styles from './Nav.module.css';
 
-export default function VerticalNavBar({ items = [], direction = "column", ulProps, ...props }) {
-  const ulClass = direction === "column" ? styles.verticalNav : styles.horizontalNav;
-
+export default function VerticalNavBar({ items = [], ulProps, ...props }) {
   return (
     <>
       <nav {...props}>
-        <ul className={ulClass}>
+        <ul className={ulProps}>
           {
             items.map((item) => (
               <li key={item.name}>

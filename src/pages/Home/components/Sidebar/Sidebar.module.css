@@ -1,5 +1,5 @@
 .sidebar {
-    grid-row: 1 / 5;
+    grid-row: 1 / span 3;
     grid-column: 1;
     padding: 0px !important;
 }
@@ -7,7 +7,7 @@
 .aside {
     padding: var(--space-6);
     justify-self: end;
-    min-width: 50%;
+    width: 50%;
     max-width: 300px;
     height: 100%;
     background-color: var(--bg-secondary);
@@ -16,4 +16,10 @@
     flex-direction: column;
     gap: var(--space-4);
     position: relative;
+}
+
+.verticalNav {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
 }

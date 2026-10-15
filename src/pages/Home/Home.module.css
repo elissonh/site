@@ -1,18 +1,19 @@
 .container {
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     background-image: url("../../assets/micro-dots-light.svg");
     background-repeat: repeat;
 }
 
 .main {
-    
+    grid-column: 1;
+    grid-row: 2;
     padding: var(--space-5) var(--space-4);
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--space-6);
-    align-self: center;
+    margin: auto;
 }
 
 

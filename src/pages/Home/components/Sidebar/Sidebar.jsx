@@ -16,7 +16,7 @@ export default function Sidebar({ onClose }) {
       <div className={styles.sidebar}>
         <Modal onClose={onClose}>
           <aside className={styles.aside}>
-            <Nav items={navItems}></Nav>
+            <Nav items={navItems} ulProps={styles.verticalNav}></Nav>
             <hr className="border-color" />
             <SocialMedias></SocialMedias>
           </aside>

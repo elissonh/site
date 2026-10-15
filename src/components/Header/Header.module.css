@@ -1,6 +1,6 @@
 .header {
     grid-row: 1;
-    grid-column: 1 / -1;
+    grid-column: 1;
     background-color: var(--bg-secondary);
 }
 .headerContent {
@@ -16,4 +16,35 @@
 }
 .headerImg {
     margin-right: 1.5em;
+}
+
+.nav {
+    font-size: var(--text-sm);
+    border-bottom: none;
+    padding: 0;
+    margin: auto;
+    display: none;
+}
+.horizontalNav {
+    display: flex;
+    gap: var(--space-5);
+    display: none;
+}
+.socialMedias {
+    display: none;
+}
+
+@media screen and (min-width: 900px) {
+    .nav {
+        display: block;
+    }
+    .horizontalNav {
+        display: flex;
+    }
+    .socialMedias {
+        display: block;
+    }
+    .headerContent button {
+        display: none;
+    }
 }

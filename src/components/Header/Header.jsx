@@ -3,8 +3,8 @@ import { useState } from "react";
 import { IoMenu } from "react-icons/io5";
 
 import Button from "../Buttons/Button";
-// import Nav from "../Nav/Nav";
-// import SocialMedias from "../SocialMedias/SocialMedias";
+import SocialMedias from "../SocialMedias/SocialMedias";
+import Nav from '../../components/Nav/Nav';
 import Sidebar from "../../pages/Home/components/Sidebar/Sidebar";
 
 import logo from '../../assets/logo.svg';
@@ -13,6 +13,12 @@ import styles from './Header.module.css';
 
 export default function Header() {
   const [showSidebar, setShowSidebar] = useState(false);
+  const navItems = [
+    { name: "Sobre", href: "#sobre" },
+    { name: "Tecnologias", href: "#tecnologias" },
+    { name: "GitHub", href: "#github" },
+    { name: "Projetos", href: "#projetos" },
+  ];
 
   function handleShowSideBar() {
     console.log("mostrando");
@@ -27,14 +33,15 @@ export default function Header() {
             <img src={logo} alt="Logo" className={styles.headerImg} />
             <span className="text-primary fw-semibold">Elisson Rocha</span>
           </div>
-          <Button variant="transparent" PrefixIcon={IoMenu} iconSize="32" equalPadding={true} onClick={handleShowSideBar}>
-          </Button>
-          {/* <div className="nav d-none">
-            <Nav></Nav>
-          </div> */}
-          {/* <div className="d-none">
-            <SocialMedias></SocialMedias>
-          </div> */}
+          <Button
+            variant="transparent"
+            PrefixIcon={IoMenu}
+            iconSize="32"
+            equalPadding={true}
+            onClick={handleShowSideBar}
+          />
+          <Nav items={navItems} className={styles.nav} ulProps={styles.horizontalNav}></Nav>
+          <SocialMedias className={styles.socialMedias}></SocialMedias>
         </header>
         <hr className="border-color" />
       </div>

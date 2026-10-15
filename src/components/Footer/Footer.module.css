@@ -1,7 +1,7 @@
 .footer {
     background-color: var(--bg-secondary);
-    grid-row: -1;
-    grid-column: 1 / -1;
+    grid-row: 3;
+    grid-column: 1;
 }
 .footer footer {
     padding: var(--space-4);
@@ -24,4 +24,28 @@
 }
 .nav {
     font-size: var(--text-sm);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: var(--space-3);
+}
+.horizontalNav {
+    display: flex;
+    gap: var(--space-2);
+}
+
+@media screen and (min-width: 900px) {
+    .footerDescription {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .nav {
+        font-size: var(--text-sm);
+        border-bottom: none;
+        padding: 0;
+        margin: auto;
+    }
+    .horizontalNav {
+        display: flex;
+        gap: var(--space-5);
+    }
 }
