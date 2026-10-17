@@ -27,8 +27,7 @@ export default function Header() {
 
   return (
     <>
-      <div className={styles.header}>
-        <header className={styles.headerContent}>
+        <header className={styles.header}>
           <div className={styles.headerLogo}>
             <img src={logo} alt="Logo" className={styles.headerImg} />
             <span className="text-primary fw-semibold">Elisson Rocha</span>
@@ -43,8 +42,6 @@ export default function Header() {
           <Nav items={navItems} className={styles.nav} ulProps={styles.horizontalNav}></Nav>
           <SocialMedias className={styles.socialMedias}></SocialMedias>
         </header>
-        <hr className="border-color" />
-      </div>
       {
         showSidebar && (
           <Sidebar onClose={() => setShowSidebar(false)}></Sidebar>
