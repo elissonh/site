@@ -13,20 +13,17 @@ export default function Footer() {
 
   return (
     <>
-      <div className={styles.footer}>
-        <hr className="border-color" />
-        <footer>
-          <div className={styles.footerDescription}>
-            <div className={styles.footerTitle}>
-              <span className="text-primary">Elisson Rocha</span>
-              <span className="text-secondary fs-xs">Desenvolvedor Front-End</span>
-            </div>
-            <SocialMedias className={styles.socialMedia} />
-            <Nav items={navItems} className={styles.nav} ulProps={styles.horizontalNav}></Nav>
-            <span className="text-secondary fs-xs">© 2026 - Todos os direitos reservados. </span>
+      <footer className={styles.footer}>
+        <div className={styles.footerDescription}>
+          <div className={styles.footerTitle}>
+            <span className="text-primary">Elisson Rocha</span>
+            <span className="text-secondary fs-xs">Desenvolvedor Front-End</span>
           </div>
-        </footer>
-      </div>
+          <SocialMedias className={styles.socialMedia} />
+          <Nav items={navItems} className={styles.nav} ulProps={styles.horizontalNav}></Nav>
+          <span className="text-secondary fs-xs">© 2026 - Todos os direitos reservados. </span>
+        </div>
+      </footer>
     </>
   );
 }

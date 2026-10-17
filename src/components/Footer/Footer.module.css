@@ -2,10 +2,10 @@
     background-color: var(--bg-secondary);
     grid-row: 3;
     grid-column: 1;
-}
-.footer footer {
     padding: var(--space-4);
+    border-top: 1px solid var(--border);
 }
+
 .footerDescription {
     display: flex;
     flex-direction: column;
